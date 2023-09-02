@@ -1,6 +1,9 @@
 @use 'reset';
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100vh;
     padding: 0 8px;
 }
@@ -52,19 +55,19 @@ header>h1 {
     }
 }
 
-
 .choise {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    align-items: center;
 
     button,
     img {
         border: none;
         background: none;
         height: 247px;
-        button:active {
+
+        &:hover {
+            cursor: pointer;
             transform: translateY(4px);
         }
     }
